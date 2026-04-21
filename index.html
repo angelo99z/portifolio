@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angelo Mattheus — Frontend Developer</title>
+  <meta name="description" content="Frontend developer building fast, clean web experiences. Available for freelance projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ───────────────────────────────────────────────────────── -->
+  <header class="nav-header" id="nav-header">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">AM<span class="dot">.</span></a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="nav-cta">Hire me</a>
+      <button class="nav-burger" id="nav-burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="#about"    onclick="closeMobile()">About</a>
+      <a href="#projects" onclick="closeMobile()">Projects</a>
+      <a href="#stack"    onclick="closeMobile()">Stack</a>
+      <a href="#contact"  onclick="closeMobile()">Contact</a>
+    </div>
+  </header>
+
+  <!-- ── HERO ─────────────────────────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">Available for freelance</div>
+      <h1 class="hero-title reveal">
+        Hi, I'm <span class="grad">Angelo Mattheus</span>.<br/>
+        I build things for the web.
+      </h1>
+      <p class="hero-sub reveal">
+        Frontend developer focused on fast, clean and functional web experiences.<br/>
+        From pixel-perfect interfaces to real-time data integrations.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">View my work</a>
+        <a href="#contact"  class="btn btn-ghost">Get in touch</a>
+      </div>
+      <div class="hero-scroll reveal">
+        <div class="scroll-indicator"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ────────────────────────────────────────────────────────────── -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <span class="section-tag">About me</span>
+          <h2 class="section-title">Turning ideas into<br/>digital products</h2>
+          <p>
+            I'm a frontend developer passionate about building web applications that are
+            both beautiful and functional. I enjoy the challenge of taking a problem and
+            engineering a clean, efficient solution — from architecture to final polish.
+          </p>
+          <p>
+            My work focuses on <strong>pure, performance-first code</strong>: no bloated
+            frameworks when a well-crafted HTML, CSS and JavaScript solution gets the job
+            done better and faster.
+          </p>
+          <p>
+            I'm currently open to <strong>freelance projects</strong> — whether you need
+            a landing page, a web app, a booking tool, or something entirely custom.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-n">4+</span>
+              <span class="stat-l">Projects shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat-n">100%</span>
+              <span class="stat-l">Custom-built</span>
+            </div>
+            <div class="stat">
+              <span class="stat-n">0</span>
+              <span class="stat-l">Unnecessary dependencies</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-avatar">AM</div>
+          <div class="about-card-info">
+            <p class="about-card-name">Angelo Mattheus</p>
+            <p class="about-card-role">Frontend Developer</p>
+            <div class="about-card-tags">
+              <span>Web Apps</span>
+              <span>APIs</span>
+              <span>UI/UX</span>
+              <span>Performance</span>
+            </div>
+          </div>
+          <div class="about-card-links">
+            <a href="https://github.com/angelo99z" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85 0 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+            </a>
+            <a href="mailto:angelomattheus1@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ──────────────────────────────────────────────────────────── -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Work</span>
+        <h2 class="section-title">Selected projects</h2>
+        <p class="section-desc">A sample of what I've built — each one solving a real problem.</p>
+      </div>
+
+      <!-- Featured project -->
+      <div class="project-featured reveal">
+        <div class="pf-content">
+          <div class="pf-meta">
+            <span class="pf-tag">Featured project</span>
+            <span class="pf-year">2026</span>
+          </div>
+          <h3 class="pf-title">AeroFind</h3>
+          <p class="pf-desc">
+            A European flight search engine that aggregates real-time prices from
+            Ryanair, British Airways, Air France and KLM — without paying for a
+            third-party API. Built with direct airline data sources, smart fallback
+            pricing and a clean booking redirect system for each carrier.
+          </p>
+          <ul class="pf-highlights">
+            <li>Live prices via Ryanair's own availability API (no key required)</li>
+            <li>Sky Scrapper integration for BA, AF and KLM</li>
+            <li>Deep-link redirects to each airline's booking page</li>
+            <li>Dual-month calendar, filters by stops, time, price and duration</li>
+          </ul>
+          <div class="pf-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>REST APIs</span><span>CORS Proxy</span>
+          </div>
+          <div class="pf-links">
+            <a href="https://angelo99z.github.io/flight-search/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live demo
+            </a>
+            <a href="https://github.com/angelo99z/flight-search" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85 0 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+              Source code
+            </a>
+          </div>
+        </div>
+        <div class="pf-visual">
+          <div class="pf-mockup">
+            <div class="mockup-bar">
+              <span></span><span></span><span></span>
+              <div class="mockup-url">aerofind.app</div>
+            </div>
+            <div class="mockup-screen">
+              <div class="mock-hero">
+                <div class="mock-logo">✈ AeroFind</div>
+                <div class="mock-search">
+                  <div class="mock-field">Dublin → London</div>
+                  <div class="mock-field">01 May 2026</div>
+                  <div class="mock-btn">Search</div>
+                </div>
+              </div>
+              <div class="mock-results">
+                <div class="mock-card">
+                  <div class="mock-al">🟡 Ryanair</div>
+                  <div class="mock-route">DUB → LGW · 1h 25m · Direct</div>
+                  <div class="mock-price">€29</div>
+                </div>
+                <div class="mock-card mc-green">
+                  <div class="mock-al">🔵 BA</div>
+                  <div class="mock-route">DUB → LHR · 1h 30m · Direct</div>
+                  <div class="mock-price">~€72</div>
+                </div>
+                <div class="mock-card">
+                  <div class="mock-al">🔷 Air France</div>
+                  <div class="mock-route">DUB → CDG · 2h 05m · Direct</div>
+                  <div class="mock-price">~€85</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other project cards -->
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="pc-header">
+            <div class="pc-icon">📋</div>
+            <div class="pc-links">
+              <a href="https://github.com/angelo99z" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85 0 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Invoice Automation</h3>
+          <p>Automated invoicing system that generates, manages and tracks client invoices — reducing manual work and improving billing accuracy.</p>
+          <div class="pc-tech"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="pc-header">
+            <div class="pc-icon">📅</div>
+            <div class="pc-links">
+              <a href="https://github.com/angelo99z" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85 0 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Booking System</h3>
+          <p>A full reservation and scheduling system with real-time availability, client management and confirmation flows.</p>
+          <div class="pc-tech"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="pc-header">
+            <div class="pc-icon">🔒</div>
+            <div class="pc-links">
+              <a href="https://github.com/angelo99z" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85 0 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>ClearConsent</h3>
+          <p>Privacy consent management tool that simplifies GDPR compliance for small businesses — clean UI, configurable policies, audit logs.</p>
+          <div class="pc-tech"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STACK ─────────────────────────────────────────────────────────────── -->
+  <section class="section" id="stack">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Tech</span>
+        <h2 class="section-title">My stack</h2>
+        <p class="section-desc">Tools and technologies I work with every day.</p>
+      </div>
+      <div class="stack-grid">
+        <div class="stack-group reveal">
+          <h4>Frontend</h4>
+          <ul>
+            <li><span class="sk-dot"></span>HTML5 &amp; CSS3</li>
+            <li><span class="sk-dot"></span>JavaScript (ES2022+)</li>
+            <li><span class="sk-dot"></span>Responsive &amp; Mobile-first</li>
+            <li><span class="sk-dot"></span>CSS Animations &amp; Transitions</li>
+            <li><span class="sk-dot"></span>Web Performance Optimisation</li>
+          </ul>
+        </div>
+        <div class="stack-group reveal">
+          <h4>Data &amp; APIs</h4>
+          <ul>
+            <li><span class="sk-dot"></span>REST APIs</li>
+            <li><span class="sk-dot"></span>JSON &amp; async/await</li>
+            <li><span class="sk-dot"></span>Third-party API integration</li>
+            <li><span class="sk-dot"></span>CORS &amp; proxy patterns</li>
+            <li><span class="sk-dot"></span>Real-time data fetching</li>
+          </ul>
+        </div>
+        <div class="stack-group reveal">
+          <h4>Tooling</h4>
+          <ul>
+            <li><span class="sk-dot"></span>Git &amp; GitHub</li>
+            <li><span class="sk-dot"></span>GitHub Pages / Vercel</li>
+            <li><span class="sk-dot"></span>VS Code</li>
+            <li><span class="sk-dot"></span>Browser DevTools</li>
+            <li><span class="sk-dot"></span>Figma (basic)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ───────────────────────────────────────────────────────────── -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="contact-wrap reveal">
+        <span class="section-tag tag-light">Contact</span>
+        <h2 class="section-title title-light">Let's build something<br/>together.</h2>
+        <p class="contact-desc">
+          Have a project in mind? I'm available for freelance work.<br/>
+          Send me a message and I'll get back to you within 24 hours.
+        </p>
+        <div class="contact-actions">
+          <a href="mailto:angelomattheus1@gmail.com" class="btn btn-white">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+            angelomattheus1@gmail.com
+          </a>
+          <a href="https://github.com/angelo99z" target="_blank" rel="noopener" class="btn btn-outline-white">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85 0 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <span>© 2026 Angelo Mattheus</span>
+      <span>Built with HTML, CSS &amp; JavaScript</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
